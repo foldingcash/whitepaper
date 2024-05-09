@@ -1,13 +1,26 @@
 \documentclass[letterpaper,12pt,titlepage]{article}
-\usepackage{graphicx} % Required for inserting images
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=red]{hyperref}
+\usepackage{graphicx}
 
-\usepackage[color={red},scale={6}]{draftwatermark} % add final option when finished
+% add final option when ready to publish
+\usepackage[color={red},scale={6}]{draftwatermark} 
 
-\def\token{FLDCH}
+\def\adminEmail{\href{mailto:admin@folding.cash}{admin@folding.cash}}
+\def\org{FoldingCash}
+\def\ticker{FLDCH}
+\def\tokenSupply{????}
+\def\initReward{???}
+\def\halvingLength{?????}
 
-\title{FoldingCash}
+\def\fahWebsite{\url{https://foldingathome.org/}}
+\def\fahLaunchDate{September 19\textsuperscript{th}, 2000}
+\def\fahLaunchReference{\url{https://foldingathome.org/2000/09/19/public-launch/}}
+
+\def\curecoinWebsite{\url{https://curecoin.net/}}
+
+\title{\org}
 \author{Miguel Molina Jr.}
-\date{\today\\v0.1.0}
+\date{\today\\v0.0.0}
 
 \begin{document}
 
@@ -18,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-    FoldingCash abstract
+    The \org{} organization was created to incentivize FAH's users to use their time, hardware (GPU), and electricity to continue and grow the amount of research that is being performed using the distributed model. The \ticker{} token is built using BitcoinCash's CashTokens technology because we believe that BCH will continue to be an affordable blockchain to transact on and are scaling in a pragmatic way. \org{} will distribute the token but our focus is on providing utility to the token which we believe will increase people's desire to earn the token.
 \end{abstract}
 
 \section{Introduction}
@@ -27,18 +40,54 @@
 Our mission is to effectively and efficiently use all of our resources to promote using computational power to helping science by rewarding users with blockchain based tokens.
 
 \subsection{Strategy}
-Our strategy is to rewards users with the \token{} token and focus on creating ways for users to utilize the token with promotional products and services. Our products and services will focus on bring awareness to the cause, community, and technologies we use.
+Our strategy is to rewards users with the \ticker{} token and focus on creating ways for users to utilize the token with promotional products and services. Our products and services will focus on bringing awareness to the cause, community, and technologies we use.
 
 \section{Folding@Home}
+Folding@Home\footnote{\fahWebsite}\footnote{We are not affiliated with the FAH project}(FAH) is a project created by Stanford University\footnote{We are not affiliated with Stanford University} starting \fahLaunchDate\footnote{\fahLaunchReference}
 
-\section{\token{} Token}
+\section{\ticker{} Token}
+
+\subsection{BCH CashTokens}
+Why did we choose BitcoinCash and CashTokens?
+
+\subsubsection{BitcoinCash}
+BitcoinCash (BCH) scaling pragmatically and their focus is to keep affordable transaction costs
+Bitcoin can scale well
+Secured using BCH's blockchain security
+BCH has a robust difficulty algorithm
+BCH is developing a robust scaling algorithm that will be released soon
+
+\subsubsection{CashTokens}
+CashTokens is a first class citizen on the blockchain which comes with inherit security over token protocols like Simple Ledger Protocol (SLP)
 
 \subsection{Supply}
+We are using the epoch of the start of the FAH as our supply amount of \tokenSupply{}
+This is a knod to the FAH project
+
+The supply will be released following the algorithm as Bitcoin. Initial block reward will be \initReward{} and will be halved every \halvingLength{}
 
 \subsubsection{Dev Fund}
+A development fund will be some percent of total supply and will be set aside for \org{'s} usage
 
 \subsubsection{Contract Enforcement}
+There is a contract that will enforce the maximum amount of supply available to be released. It will be tied to the release of the blockchain's mining rate. When a distribution happens we'll release the available tokens to distribute.
 
-\subsection{Earning \token{}}
+The contract makes it provable the rate the supply will be released and create trust the this foundation will not have immediate full access to the full supply.
+
+There is inherent trust involved w/ distribution and a contract won't be used to enforce the distribution. Even if a contract were used trust would still be needed as an oracle would need to be used to communicate the Folding@Home points
+
+\subsection{Earning \ticker{}}
+Using FAH distributed network each user will fold on their network. They will be assigned work and as they perform work and submit completed work the FAH project will reward them points. We will collect the points via snapshots. Users will be rewarded a proportional amount of our token in relation to all users meeting our register requirements.
+
+To register just need to have a name structure of ???
+
+Users will be able to fold on their own team including CureCoin\footnote{We are not affiliated with CureCoin}\footnote{\curecoinWebsite}
+
+\section{FoldingCoin}
+We are essentially a fork of FoldingCoin. We share some open source software. Miguel was previously employed and still active member in FoldingCoin and their community.
+
+\subsection{Redeem FLDC for FLDCH}
+For two years starting ??? users will be able to redeem their FLDC for FLDCH.
+They will communicate with \adminEmail{}
 
 \end{document}
