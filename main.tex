@@ -3,17 +3,19 @@
 \usepackage{graphicx}
 
 % add final option when ready to publish
-\usepackage[color={red},scale={5}]{draftwatermark} 
+\usepackage[color={red},scale={5},final]{draftwatermark} 
 
 \def\adminEmail{\href{mailto:admin@folding.cash}{admin@folding.cash}}
 \def\org{FoldingCash LLC}
 \def\ticker{FLDCH}
 \def\tokenSupply{969,346,800}
-\def\initReward{1,250}
-\def\halvingLength{315,000}
+\def\initReward{2,500}
+\def\halvingLength{157,500}
 \def\devfund{100,000,000}
 \def\migrationFund{100,000,000}
-\def\startingBlock{850,000\footnote{Actual starting block is TBD}}
+\def\startingBlock{857,132}
+
+\def\releaseContract{\href{https://explorer.electroncash.de/address/bitcoincash:pv3es9jvpjv56c6p9cs72r942hj9pq2h4cyvxvvn9j9gmmcezfanctvuaetf6}{pv3es9jvpjv56c6p9cs72r942hj9pq2h4cyvxvvn9j9gmmcezfanctvuaetf6}}
 
 \def\fahLaunchEpoch{12AM on September 19th, 2000 PDT (UTC-7:00)}
 
@@ -26,7 +28,7 @@
 
 \title{\org}
 \author{Miguel Molina Jr.}
-\date{\today\\v0.1.0}
+\date{\today\\v1.0.0}
 
 \begin{document}
 
@@ -38,7 +40,7 @@
 \maketitle
 
 \begin{abstract}
-    The \org{} organization was created to incentivize Folding@Home's users to use their time, computer hardware, and electricity to continue and grow the amount of research that is being performed by Folding@Home. \org{} wants to incentivize users by leveraging a distributed and friction-less model like Folding@Home uses for their research. The \ticker{} token is built using BitcoinCash's CashTokens technology because we believe that BitcoinCash will continue to be an affordable blockchain to transact on and provides token technology as a first class citizen. \org{} will distribute the token but does not guarantee any return on a user's token earnings. However, instead our focus will be on providing utility to the token which we believe will increase people's desire to earn the token.
+    The \org{} organization was created to incentivize people to use their time, computer hardware, and electricity to continue and grow the amount of research that is being performed by Folding@Home. We want to incentivize users by leveraging a distributed and friction-less token model just like Folding@Home uses a distributed and friction-less model for their research. The \ticker{} token is built using BitcoinCash's CashTokens technology because \org{} believes that BitcoinCash will continue to be an affordable blockchain to transact on and provides token technology as a first class citizen. We will distribute the token but do not guarantee any return on a user's token earnings and the token does not provide any type of say or stake into the company. However, instead our focus will be on providing utility to the token; which we believe will increase people's desire to earn the token and drive people to Folding@Home.
 \end{abstract}
 
 \section{Introduction}
@@ -50,22 +52,22 @@
 \org{'s} strategy is to rewards users with the \ticker{} token and focus on creating ways for users to utilize the token with promotional products and services. Our products and services will focus on bringing awareness to the cause, community, and technologies we use.
 
 \section{Folding@Home}
-Folding@Home\footnote{\fahWebsite}\footnote{We are not affiliated with the FAH project}(FAH) is a distributed research project that simulates protein folding and started on \fahLaunchDate\footnote{\fahLaunchReference}. The protein folding simulations are used by researches to understand how to make more effective medicine to combat serious diseases. For example, FAH researches neurological diseases like Alzheimers, Parkinsons, and Huntingtons or infectious diseases like Hepatitis C and COVID-19 as well as cancers like breast cancer and kidney cancer.\footnote{\fahDiseasesReference}
+Folding@Home\footnote{\fahWebsite}\footnote{We are not affiliated with the FAH project}(FAH) is a distributed research project that simulates protein folding and started on \fahLaunchDate\footnote{\fahLaunchReference}. The protein folding simulations are used by researchers to understand how to make effective medicine to combat serious diseases. For example, FAH researches neurological diseases like Alzheimers, Parkinsons, and Huntingtons or infectious diseases like Hepatitis C and COVID-19 as well as cancers like breast cancer and kidney cancer.\footnote{\fahDiseasesReference}
 
 FAH has been running for over twenty years and has made significant contributes to medicine with their novel research technology. However, FAH relies on individuals' generosity to donate their time and money without expecting anything in return; unfortunately this limits the scale of FAH's research model. With the creation of blockchain technologies the ability to combine these distributed technologies became self evident.
 
 \section{FoldingCoin Inc.}
-\org{} was inspired by FoldingCoin Inc. and their token, FLDC. We even share some of our open source software together as well as the community works closely together; ultimately believing in the same goal of enabling and scaling scientific research. Miguel M., the founder of \org{}, was previously employed and is still an active member in FoldingCoin Inc. and their community. FoldingCoin Inc. proved that distributing tokens to encourage scientific research was possible and a demand for a token existed. FLDC built on CounterParty (XCP) and worked well while Bitcoin (BTC) were able to be transacted on the blockchain for negligible costs. However, as BTC's users grew but transactions capacity did not scale as fast, FLDC became cost prohibitive to transact and distribute which has made it impossible for the project to continue. The project has not distributed any token for several years now.
+\org{} was inspired by FoldingCoin Inc. and their token, FLDC. We share a subset of software; as well as our community works closely together, ultimately believing in the same goal of enabling and scaling scientific research. Miguel M., the founder of \org{}, was previously employed and is still an active member with FoldingCoin Inc. and their community. FoldingCoin Inc. proved that distributing tokens to encourage scientific research was possible and a demand for such a token existed. FLDC, built on CounterParty (XCP), worked well while Bitcoin (BTC) was able to be transacted on the blockchain for negligible costs because we rely on being able to distribute our tokens at scale for an affordable rate. However, BTC's user base and traction rate grew but transactions capacity was unable to keep pace, FLDC became cost prohibitive to distribute which has made it difficult for the project to continue with XCP on BTC.
 
-\org{} will be using the same software FoldingCoin Inc. used for daily FAH statistics download and API, with supplemental software where needed, and will be providing contributions by updating the software to the latest versions  The software will continue to be open source and will be available for FoldingCoin Inc. when FoldingCoin Inc. is able to ditribute FLDC again; ultimately being a win-win for both organizations.
+\org{} will be using similar software that FoldingCoin Inc. used for daily FAH statistics download, distribution API, and will be providing contributions by updating the software to the latest versions  The software will continue to be open source and will be available for FoldingCoin Inc. once FoldingCoin Inc. is able to distribute FLDC again; ultimately being a win-win for both organizations.
 
 \section{BitcoinCash}
-BitcoinCash (BCH) is a fork of BTC built using the same Bitcoin technology. BCH scales Bitcoin in a pragmatic way that includes scaling the size of their blocks which is the main limiter in throughput for Bitcoin technology. Scaling L1 Bitcoin means BCH has been able to keep their transaction costs extremely low, even as users have increased their usage of BCH, without increasing complexity or sacrificing security.
+BitcoinCash (BCH) is a fork of BTC built using the same Bitcoin technology. BCH scales Bitcoin in a pragmatic way that includes scaling the size of their blocks (which is the main limiter in throughput for Bitcoin technology). Scaling L1 Bitcoin means BCH has been able to keep their transaction costs extremely low, even as users have increased their usage of BCH, without increasing complexity or sacrificing security.
 
-\org{} believes that BCH will continue to be able to provide a robust and affordable environment for users to be able to interact now and far into the future. BCH has been releasing rapid improvements to the Bitcoin technology that allows for scaling an order of magnitude of users while keeping their costs low. We believe low transaction costs are a must for token technology to truly be successful. Additionally, BCH with it's releases has enabled additional smart contract functionality that we will leverage to create confidence with our users that we are using our token only in the way we market.
+\org{} believes that BCH will continue to be able to provide a robust and affordable environment for users to be able to interact now and far into the future. BCH has been releasing improvements to the Bitcoin technology that allows for scaling an order of magnitude of users while keeping their costs low. We believe low transaction costs are a must for token technology to truly be successful. Additionally, BCH with it's enhancements has enabled additional smart contract functionality that \org{} will leverage to create confidence and trust with our users that we are using our token only in the way we market.
 
 \subsection{CashTokens}
-CashTokens is a first class citizen on BCH which comes with inherit security over other second class citizen token protocols like Simple Ledger Protocol (SLP) or XCP. SLP and XCP rely on the clients to perform full blockchain history validation or use a trusted entity to ensure their tokens are authentic as well as protect against double-spends. CashTokens because of it's design uses the UTXO model and knows that nodes propagating transactions are authentic and can use the existing system to watch for potential double-spends.
+CashTokens is a first class citizen on BCH which inherits enhanced security over other second class citizen token protocols like Simple Ledger Protocol (SLP) or XCP. SLP and XCP rely on the clients to perform full blockchain history validation or the user must use a trusted entity to ensure their tokens are authentic as well as protect against double-spends because the network does not know about the underlying tokens and allows double-spends. CashTokens, because of it's first class citizen design, builds on the UTXO model and so clients know that nodes propagating transactions have validated the transaction for authenticity and can use their existing systems to watch for potential double-spends.
 
 \org{} believes that CashTokens is the best token technology to use on Bitcoin because of it's first class citizen status. Any token built using CashTokens will have clients that can verify token authenticity and double-spends in a reliably fast and light-weight method. CashTokens will inherently receive the same block security that Bitcoin has that'll prevent transaction reversal too.
 
@@ -86,31 +88,31 @@ We are using the epoch of the start of the FAH as our supply amount of \tokenSup
 \devfund{}, approximately 10\% of the total supply will be set aside for \org{'s} usage. The dev fund will be used to fund the organization and will cover it's expenses. Currently there is no plan to lock the dev fund in a contract.
 
 \subsubsection{Contract Enforcement}
-\org{} will be using a contract that will enforce the maximum amount of supply available to be released and ensure that the \org{} never is able to abuse it's trust to access the funds prematurely. \ticker{} supply release will be tied to the blockchain's block production rate. 
+\org{} will be using a contract that will enforce the maximum amount of supply available to be released and ensure that \org{} is never able to abuse it's trust to access the funds prematurely. \ticker{} supply release will be tied to the blockchain's block production rate. The release contract can be found at the address:
 
-**When a distribution happens we'll release the available tokens to distribute corresponding with the FAH statistics timestamp collected and the closest block corresponding to the statistics timestamp not to exceed the timestamp.
+\releaseContract{}
 
-Even though we'll use a contract to enforce access to \ticker{}, there will still be trust involved w/ distribution and a contract won't be used to enforce the distribution because of the complexity and additional costs to build such a contract which feels hard to scale with today's limitations. Even if a contract were used, trust would still be needed as an oracle would need to be used to communicate the Folding@Home points and negates much of the value a contract provides as we are the trusted entity acting oracle and distributor.
+Although we have a contract to enforce access to \ticker{}, there will still be trust involved w/ distribution and a contract won't be used to enforce the distribution because of the complexity and additional costs to build such a contract which feels hard to scale with today's limitations. Even if a contract were used, trust would still be needed as an oracle would need to be used to communicate the Folding@Home points and negates much of the value a contract provides as we would be the trusted entity, acting as the oracle and distributor.
 
 \subsection{Earning \ticker{}}
-Using the FAH distributed network each user will fold on their own network and the folding pool of their preference. The user will be assigned work and as they perform work and submit completed work the FAH project will reward them points. \org{} will collect the points via daily and monthly snapshots. Once a month users will be rewarded a proportional amount of \ticker{} to all users meeting our register requirements.
+Using the FAH distributed network each user will fold on their own network and the folding pool of their preference. The user will be assigned work and as they perform work and submit completed work the FAH project will reward them points. \org{} will collect the points via daily and monthly snapshots. Once a month users will be rewarded a proportional amount of \ticker{} to all users meeting our naming requirements.
 
 To register to earn \ticker{} we require the user's token address. The user will be required to format their FAH username one of three ways for our software to identify and register the user.
 
 \begin{itemize}
     \item zz80zd6kjxc20cw0hck65qu299nfcyvwqcwu3ae69c
-    \item bitcoincash:zz80zd6kjxc20cw0hck65qu299nfcyvwqcwu3ae69c\footnote{max name limit permitting}
-    \item strungsafe\_zz80zd6kjxc20cw0hck65qu299nfcyvwqcwu3ae69c\footnote{max name limit is enforced by FAH}
+    \item bitcoincash:zz80zd6kjxc20cw0hck65qu299nfcyvwqcwu3ae69c
+    \item foldingcash\_zz80zd6kjxc20cw0hck65qu299nfcyvwqcwu3ae69c\footnote{max name limit of 64 characters is enforced by FAH and will silently truncate the name}
 \end{itemize}
 
-After we identify a user for being registered we will validate the address to ensure the address is token capable and is a valid bitcoin address. The following month during distributions when a new user is identified the user will automatically begin to receive \ticker{}.
+After we identify a user as being registered we will validate the address to ensure the address is token capable and is a valid bitcoin address. The following month after a new user has registered they will automatically begin to receive \ticker{}.
 
 \subsection{Merchandise}
 One way \org{} will encourage users to contribute will be to offer exclusive merchandise available only with \ticker{}.
 
 \begin{enumerate}
     \item 25\% will be burned
-    \item 25\% will be added back to the distribution fund
+    \item 25\% will be distributed at the following month's distribution
     \item 50\% will be used to cover expenses
 \end{enumerate}
 
@@ -119,11 +121,11 @@ One way \org{} will encourage users to contribute will be to offer exclusive mer
 
 \begin{enumerate}
     \item 33\% will be burned
-    \item 33\% will be added back to the distribution fund
+    \item 33\% will be distributed at the following month's distribution
     \item 33\% will be used to cover expenses
 \end{enumerate}
 
 \subsection{Redeem FLDC for FLDCH}
-For two years (105,000 blocks) starting with \startingBlock{} users will be able to redeem their FLDC for \ticker{}. They will communicate with \adminEmail{} that they'd like to migrate their FLDC holdings to \ticker{}. We will then respond with where to send their FLDC funds (this will be a burner address) and where they would like to receive their new \ticker{} tokens. The redemption will be 10:1, meaning for every ten FLDC sent to \org{} the user will receive one \ticker{}. This will likely be a manual process to simplify the development effort, minimize risk, and ensure accuracy when distributing the new token. The remaining unclaimed migration fund of \ticker{} that is not redeemed at the end of the migration period will be added to the dev fund for \org{'s} usage.
+For two years (105,000 blocks) starting with \startingBlock{} users will be able to redeem their FLDC for \ticker{}. They will communicate with \adminEmail{} or DM strungsafe on Discord that they'd like to migrate their FLDC holdings to \ticker{}. We will then respond with where to send their FLDC funds (this will be a burner address) and where they would like to receive their new \ticker{} tokens. The redemption will be 10:1, meaning for every ten FLDC sent to \org{} the user will receive one \ticker{}. This will likely be a manual process to simplify the development effort, minimize risk, and ensure accuracy when distributing the new token. The remaining unclaimed migration fund of \ticker{} that is not redeemed at the end of the migration period will be added to the dev fund to be used at \org{'s} discretion.
 
 \end{document}
